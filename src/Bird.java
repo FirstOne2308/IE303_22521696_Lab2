@@ -22,13 +22,6 @@ public class Bird {
         this.image = new ImageIcon(getClass().getResource("/Assets/flappybird.png")).getImage();
     }
 
-//    private void loadImage() {
-//        try {
-//            image = ImageIO.read(new File("Assets/flappybird.png"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
 
     public void draw(Graphics g) {
         g.drawImage(image, x, y, w, h, null);
